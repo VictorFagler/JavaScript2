@@ -1,0 +1,82 @@
+Ni ska tillsammans i era grupper skapa en ärendehanterings sida. Där ska man kunna skapa en felanmälan och sedan se alla ärenden och dess status.
+
+Gränssnittet ska ni designa själva för att sedan bygga med hjälp av HTML, CSS och JavaScript. Ni får använda CSS bibliotek så som Bootstrap, Material design eller liknande om ni vill. Det bestämmer ni inom gruppen.
+
+Hemsidan behöver i det här fallet inte vara responsiv utan det räcker med en desktop version, vill ni ändå implementera en mobildesign så är det såklart okej att göra det.
+
+För att kommunicera med databasen som innehåller alla ärenden så kommer ni att använda ett API som jag har satt upp åt er.
+
+Nedan är en länk med dokumentation om hur ni använder API:et
+https://fnd22-shared.azurewebsites.net/swagger/index.html
+
+
+BaseURL för alla endpoints ni kommer använda är: https://fnd22-shared.azurewebsites.net/api/
+
+efter den sista / kommer ni lägga till:
+
+Cases - för att antingen göra en GET eller en POST (läsa eller skriva data)
+Cases/{id} - för att hämta ett enskilt ärende eller uppdatera ett ärende
+Comments - För att skapa en kommentar
+Statuses - för att få en lista över de olika statusar som går att använda
+
+
+Tänk på att alla grupper kommer att använda samma databas, ni kommer alltså se era och alla andras ärenden och kommentarer.
+Funktionalitet
+
+
+saker som bör finnas med på sidan är:
+
+Ett formulär som kan registrera ett nytt ärende med information om användaren, beskrivning och en rubrik på ärendet.
+En lista där alla ärenden skrivs ut med det senaste ärendet längst upp i listan. Listan ska visa rubriken, ärendestatus och användaren, samt tidpunkt då ärendet skapades.
+Möjlighet att lägga till en kommentar till ett ärende.
+Möjlighet att ändra ärendestatus. tex. från "ej påbörjad" till "pågående"
+
+
+
+
+Betygskriterier
+
+
+För betyget godkänt (G) ska följande finnas med i eran lösning:
+
+Det ska gå att skapa ett nytt ärende genom ett formulär, med information så som: e-postadress, rubrik och meddelande.
+Det ska gå att spara ärendet till databasen via API:et
+Ni ska lista upp alla ärenden så man kan se information så som tidpunkt, ärendestatus, rubrik och e-postadress.
+Det ska gå att klicka sig vidare till en detaljsida för att se all information och eventuella kommentarer om ett ärende.
+
+
+För betyget väl godkänt (VG) ska även följande finnas med i eran lösning:
+
+Det ska gå att lägga till kommentarer kopplade till ärendet.
+På en kommentar ska det framgå tidpunkt då kommentaren skapades.
+Det ska gå att ändra ärendestatus mellan: ej påbörjad, pågående och avslutad.
+Status ska tydligt visas i listan med både färg (röd, gul, grön) och text
+Individuell rapport
+
+
+Rapport
+
+
+För betyget VG skall även en kort individuell rapport skickas in där du besvarar föjlande frågor:
+
+Hur har arbetet i helhet gått?
+Vilken var din roll i teamet?
+Hur fördelades uppgifterna ut?
+Använde ni er av något planeringsverktyg typ Trello eller liknande?
+Vad var svårast?
+Vad var roligast?
+Tänk på att fokus ligger på själva arbetet och inte rapporten. Den behöver alltså inte vara särskilt lång.
+
+
+
+
+
+
+
+
+Inlämning av kod
+
+
+Inlämningen sker genom att du skriver en kommentar med en länk till eran gemensamma github-repository här under. 
+
+VIKTIGT! Se till att github-länken faktiskt fungerar, att repositoryn är publik och att det finns innehåll på den.

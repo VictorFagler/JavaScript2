@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="taskList">
+      <div class="card">
+        <h1 class="cardTitle">cases</h1>
+        <h4>Submit new case</h4>
+        <form id="taskForm">
+          <div class="input_fields">
+            <input type="email" name="task" id="emailInput" placeholder="E-mail">
+            <input type="text" name="task" id="subjectInput" placeholder="Subject">
+            <textarea name="message" id="messageInput" placeholder="Write case..."></textarea>
+          </div>
+          <input type="submit" value="Submit case" class="btn">
+        </form>
+      </div>
+    </div>
+
+    <div class="caseContainer">
+      <div class="modal hidden">
+        <button class="closeModal">X</button>
+        <h2 class="modalHeadline">Comments</h2>
+        <p></p>
+        <textarea name="message" placeholder="Write comment..."></textarea>
+        <button class="modalAddComment">Submit comment</button>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

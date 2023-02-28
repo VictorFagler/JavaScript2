@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+html {
+  color-scheme: dark;
+  background-color: rgb(100, 163, 247);
+}
+
+h4{
+  padding: .3rem;
+}
+.container {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.cardTitle {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+input {
+  border: none;
+  width: 100%;
+  height: 2.5em;
+  border-radius:7px;
+  margin: 7px;
+  padding-left: .7rem;
+}
+input::placeholder{
+  color:rgba(255, 255, 255, 0.534);
+}
+input:hover {
+  border: 1px solid white;
+}
+.taskList {
+  width: 600px;
+  background-color: rgb(71, 71, 71);
+  border-radius: 30px;
+}
+
+
+/* Submit button */
+
+textarea {
+  width: 100%;
+  height: 35px;
+  margin: 0.5rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 7px;
+  overflow:hidden;
+}
+textarea::placeholder{
+  color:rgba(255, 255, 255, 0.534);
+}
+
+textarea:hover, textarea:focus {
+  height: 100px;
+  border-bottom: .01em solid white;
+  transition: ease-in-out 0.3s;
+}
+
+
+.inputFields {
+  margin: 1.6rem 0;
+}
+input.btn {
+  height: 30px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.575);
+  cursor: pointer;
+}
+.btn:hover {
+  color:black;
+  background-color: rgba(255, 255, 255, 0.507);
+  border:none;
+}
+
+
+.user {
+  padding: 2rem;
+  border-radius: 30px;
+  margin: 2rem;
+  font-size: 1.2rem;
+  width: 600px;
+  background-color: rgb(71, 71, 71);
+}
+
+.timeAdd{
+  display: flex;
+  justify-content: flex-end;
+  font-size: .7rem;
+}
+/* .case_status {
+  padding-top:.3rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: .7rem;
+} */
+
+.userSubject {
+font-size: 2rem;
+padding: .7rem .6rem;
+border-bottom: 1px solid #ffffff88
+}
+.userEmail {
+font-size: 1rem;
+padding: .7rem .5rem;
+border-bottom: 1px solid #ffffff88
+}
+
+
+.userMessage{
+  font-size: 1rem;
+  padding: .7rem .5rem;
+}
+
+
+/* Modal */
+.modal {
+  position: absolute;
+  z-index:99;
+  border-radius:35px;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #414141;
+  padding: 4rem;
+}
+
+.showModal {
+  width: 100%;
+  height: 30px;
+  background: rgba(3, 2, 2, 0.575);
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: rgba(3, 2, 2, 0.575);
+}
+
+.showModal:hover {
+  color:black;
+  background-color: rgba(255, 255, 255, 0.507);
+  border:none;
+}
+
+
+.closeModal {
+  position: absolute;
+  border: none;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  background: transparent;
+}
+
+.closeModal:hover{
+  color: rgb(228, 88, 88)
+}
+.modalHeadline {
+  text-align:center;
+  font-size: 2rem;
+}
+.modalAddComment{
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  margin: .6rem;
+  border-radius: 30px;
+  border:none;
+}
+.addComment:hover{
+  background-color: #8b8989;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 50;
+}
+.hidden {
+  display: none;
+}
